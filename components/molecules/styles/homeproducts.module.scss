@@ -1,0 +1,16 @@
+.linkgrid {
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+
+    a {
+        color: #fff;
+        background: darkred;
+        height: 80px;
+        display: block;
+        border: 1px solid #000;
+        padding: 10px;
+    }
+  }

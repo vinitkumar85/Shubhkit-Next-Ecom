@@ -1,0 +1,14 @@
+ul.navbar {
+    background: #000;
+
+    li {
+        display: inline;
+
+        a {
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+            margin: 0 20px;
+        }
+    }
+}

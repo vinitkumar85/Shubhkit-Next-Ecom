@@ -1,0 +1,18 @@
+body {
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
+    padding: 20px 20px 60px;
+    max-width: 980px;
+    margin: 0 auto;
+    color: #444;
+  }
+.main-container{
+    min-height: 300px;
+}
+.product-grid {
+  display: grid;
+  padding: 30px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
