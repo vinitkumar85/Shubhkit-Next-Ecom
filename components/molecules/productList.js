@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './styles/productlist.module.scss';
+import styles from './styles/products.module.scss';
 
 const ProductList = ({ value }) => (
     <div className={styles.productitem}>
