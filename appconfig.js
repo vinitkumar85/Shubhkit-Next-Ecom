@@ -15,9 +15,9 @@ var devconfig= {
     apiPath: "http://localhost:3003"
 }
 var prodconfig= {
-    basePath : "http://localhost:8888/localshop/",
+    basePath : "http://192.168.43.224:8888/localshop/",
     secretToken: "xs1dhwllwenug9xvykyurgpwqq052ck4", //3- Access Token - not secret
-    apiPath: "http://localhost:3001"
+    apiPath: "http://192.168.43.224:3001"
 }
 
 module.exports = (function(){
