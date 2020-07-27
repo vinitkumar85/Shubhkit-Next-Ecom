@@ -47,8 +47,17 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   let skuId = params.sku;
-  const res = await axios.get(`${appConfig.apiPath}/api/get/product/${skuId}`);
-  const data = await res.data;
+  let data;
+  try {
+    const res = await axios.get(`${appConfig.basePath}/rest/V1/products/${skuId}`,
+      {
+        headers: { 'Authorization': `Bearer ${appConfig.secretToken}` }
+      }
+    )
+    data = await res.data;
+  } catch (e) {
+    data = { name: 'test', price: '20' };
+  }
 
   return {
     props: {
